@@ -51,14 +51,14 @@ public class AppContext {
         koleksi.tambah(JenisKoleksi.SKRIPSI, "Rancang Bangun Jaringan Kampus", "Siti Nurhaliza", 2022, 1,
                 false, "Teknik Elektro", "Ir. Wahyu, M.Eng.");
 
-        anggota.tambah("Dewi Lestari", "21120123140001", "dewi@students.undip.ac.id",
+        anggota.tambah("Bagus Ariiq Ambiya", "21120124140151", "bagusariiq@students.undip.ac.id",
                 StatusAnggota.MAHASISWA, LocalDate.now().minusMonths(6), true);
-        anggota.tambah("Rizky Pratama", "21120123140002", "rizky@students.undip.ac.id",
+        anggota.tambah("Ignatius Dimas Prayogo", "21120124130058", "ignatiusdimasprayogo@students.undip.ac.id",
                 StatusAnggota.MAHASISWA, LocalDate.now().minusMonths(3), true);
-        anggota.tambah("Dr. Sutrisno, M.T.", "197501012005011001", "sutrisno@lecturer.undip.ac.id",
+        anggota.tambah("Dr. Oky Dwi Nurhayati, S.T., M.T.", "198000000000000001", "oky@lecturer.undip.ac.id",
                 StatusAnggota.DOSEN, LocalDate.now().minusYears(1), true);
-        anggota.tambah("Bambang Hartono", "198803152015041002", "bambang@live.undip.ac.id",
-                StatusAnggota.STAF, LocalDate.now().minusMonths(8), false);
+        anggota.tambah("Muhammad Habiburrahman", "21120124140121", "habib@students.undip.ac.id",
+                StatusAnggota.MAHASISWA, LocalDate.now().minusMonths(8), true);
 
         // contoh transaksi: satu sudah terlambat supaya fitur denda bisa langsung didemokan
         peminjaman.pinjam(anggota.cari("A001"), koleksi.cari("K001"), LocalDate.now().minusDays(20));
