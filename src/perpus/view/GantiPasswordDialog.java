@@ -22,8 +22,8 @@ public final class GantiPasswordDialog {
 
         JPanel form = new JPanel(new GridBagLayout());
         Ui.baris(form, 0, "Password lama", lama);
-        Ui.baris(form, 1, "Password baru", baru);
-        Ui.baris(form, 2, "Ulangi password baru", konfirmasi);
+        Ui.baris(form, 1, "Password baru (Min. 6 Karakter)", baru);
+        Ui.baris(form, 2, "Ulangi password baru (Min. 6 Karakter)", konfirmasi);
 
         Object[] pilihan = {"Simpan", "Batal"};
         int hasil = JOptionPane.showOptionDialog(induk, form, "Ganti Password", JOptionPane.OK_CANCEL_OPTION,
